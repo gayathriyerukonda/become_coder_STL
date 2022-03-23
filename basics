@@ -1,0 +1,20 @@
+#include<iostream>
+#include<vector>        //header file for vector
+using namespace std;
+int main()
+{
+
+	vector<int>ve;       //declaring a vector
+  ve.push_back(1);    //taking elements by using push_back 
+	ve.emplace_back(2);      //taking elements by using emplace_back (it executes in less time than push_back )
+for(auto i=1;i<=5;i++)     //taking vector elements in loop
+	{
+		int t;
+		cin>>t;
+		ve.push_back(t);
+	}
+	for (auto i :ve )          //printing elements
+	{
+		cout<<i<<' ';
+	}
+}
